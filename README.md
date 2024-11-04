@@ -43,7 +43,7 @@ The following table shows which functions Hydralein supports:
 3) Install the dependencies. In this case it's just **Paramiko**. You can install it across platforms with **Pip**:  
     `pip install paramiko`  
 
->i: If you want to test the the program safely, you can create a test environment with Docker, that establishes an SSH connection to localhost. This is not part of this Repository.
+>i: If you want to test the the program safely, you can create a test environment with Docker, that establishes an SSH connection to localhost. Make sure the container runs before testing the program. *How to create this environment is not part of this Repository*.
 
 ## Usage
 - Make sure you are in the folder where you cloned Hydralein into.  
@@ -53,12 +53,12 @@ The following table shows which functions Hydralein supports:
     or  
     `python hydralein --help`  
 
-- Running a Brute-Force Attack to crack the SSH login passwort from user HomerJ at the server 123.4.5.6:  
+- Running a **Brute-Force Attack** to crack the SSH login passwort from user HomerJ at the server 123.4.5.6:  
     `python hydralein.py -u HomerJ -s 123.4.5.6`  
     >i: Carried out with the default charset (digits and lowercase letters), this attack would require 42.5 days of computing time.  
     Then use --min and --max! Good idea. It still doesn't change as much as you think...  
 
-- Running a Dictionary Attack to crack the SSH login passwort from user HomerJ at the server 123.4.5.6:  
+- Running a **Dictionary Attack** to crack the SSH login passwort from user HomerJ at the server 123.4.5.6:  
     `python hydralein.py -u HomerJ -s 123.4.5.6 -w "path/to/wordlist"`
 
 ## Additional Notes

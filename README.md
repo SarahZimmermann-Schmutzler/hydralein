@@ -20,7 +20,7 @@ It was coded on Windows 10 using VSCode as code editor.
 ## Getting Started
 1) <a href="https://docs.github.com/de/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">Fork</a> the project to your namespace.
 2) <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">Clone</a> the project to your platform.
-3) Install the dependencies. In this case it's just `Paramiko`. You can install it across platforms with `pip`:
+3) Install the dependencies. In this case it's just `Paramiko`. You can install it across platforms with `pip`:  
     `pip install paramiko`
 
 ## Usage

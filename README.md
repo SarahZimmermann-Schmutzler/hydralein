@@ -1,7 +1,7 @@
 # HYDRALEIN
 
 A programm to crack SSH passwords.  
-This is a lightweight version of the known **hydra** - tool.  
+This is a lightweight version of the known <a href="https://www.thc.org/">**Hydra**</a> - tool.  
 
 The program was created as part of my training at the Developer Academy and is used exclusively for teaching purposes.  
 It was coded on **Windows 10** using **VSCode** as code editor.

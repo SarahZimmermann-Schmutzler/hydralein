@@ -4,6 +4,7 @@ A programm to crack SSH passwords via Brute-Force or Dictionary Attack.
 This is a lightweight version of the known <a href="https://github.com/vanhauser-thc/thc-hydra">**Hydra**</a> - tool.  
 
 The program was created as part of my training at the Developer Academy and is used exclusively for teaching purposes.  
+
 It was coded on **Windows 10** using **VSCode** as code editor.
 
 ## Table of Contents
@@ -38,9 +39,9 @@ The following table shows which functions Hydralein supports:
     - If a wordlist is given, the program runs a Dictionary Attack with it.
 
 ## Getting Started
-1) <a href="https://docs.github.com/de/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">Fork</a> the project to your namespace.
-2) <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">Clone</a> the project to your platform.
-3) Install the dependencies. In this case it's just **Paramiko**. You can install it across platforms with **Pip**:  
+0) <a href="https://docs.github.com/de/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">Fork</a> the project to your namespace, if you want to make changes or open a <a href="https://docs.github.com/de/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">Pull Request</a>.
+1) <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">Clone</a> the project to your platform.
+2) Install the dependencies. In this case it's just **Paramiko**. You can install it across platforms with **Pip**:  
     `pip install paramiko`  
 
 >i: If you want to test the the program safely, you can create a test environment with Docker, that establishes an SSH connection to localhost. Make sure the container runs before testing the program. *How to create this environment is not part of this Repository*.

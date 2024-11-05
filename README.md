@@ -7,11 +7,11 @@ The program was created as part of my training at the Developer Academy and is u
 It was coded on **Windows 10** using **VSCode** as code editor.
 
 ## Table of Contents
-<a href="#technologies">1. Technologies</a>  
-<a href="#features">2. Features</a>  
-<a href="#getting-started">3. Getting Started</a>  
-<a href="#usage">4. Usage</a>  
-<a href="#additional-notes">5. Additional Notes</a>  
+1. <a href="#technologies">Technologies</a>  
+2. <a href="#features">Features</a>  
+3. <a href="#getting-started">Getting Started</a>  
+4. <a href="#usage">Usage</a>  
+5. <a href="#additional-notes">Additional Notes</a>  
 
 ## Technologies
 * **Python** 3.12.2

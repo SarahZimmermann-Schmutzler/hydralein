@@ -40,7 +40,7 @@ The following table shows which functions Hydralein supports:
 
 ## Getting Started
 0) <a href="https://docs.github.com/de/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">Fork</a> the project to your namespace, if you want to make changes or open a <a href="https://docs.github.com/de/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">Pull Request</a>.
-1) <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">Clone</a> the project to your platform.
+1) <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">Clone</a> the project to your platform if you just want to use the program.
 2) Install the dependencies. In this case it's just **Paramiko**. You can install it across platforms with **Pip**:  
     `pip install paramiko`  
 
@@ -56,14 +56,14 @@ The following table shows which functions Hydralein supports:
 
 - To run a **Brute-Force Attack** with no further specifications use the following command in your terminal:  
     `python hydralein.py -u [nameOfSshUser] -s [addressOfSshServer]`  
-    - Example: Crack the SSH login passwort from user HomerJ at the server with the IP-address 123.4.5.6:  
+    - <ins>Example</ins>: Crack the SSH login passwort from user HomerJ at the server with the IP-address 123.4.5.6:  
     `python hydralein.py -u HomerJ -s 123.4.5.6`  
     >i: Carried out with the default charset (digits and lowercase letters), this attack would require 42.5 days of computing time.  
     Then use --min and --max! Good idea. It still doesn't change as much as you think...  
 
 - To run a **Dictionary Attack** you need this command:  
     `python hydralein.py -u [nameOfSshUser] -s [addressOfSshServer] -w [pathToWordlist]`  
-    - Example: to crack the SSH login passwort from user HomerJ at the server 123.4.5.6:  
+    - <ins>Example</ins>: to crack the SSH login passwort from user HomerJ at the server 123.4.5.6:  
     `python hydralein.py -u HomerJ -s 123.4.5.6 -w "path/to/wordlist"`  
     - What you see, if the attack was succesful:  
     ```

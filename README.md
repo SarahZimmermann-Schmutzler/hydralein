@@ -15,7 +15,7 @@ It was coded on **Windows 10** using **VSCode** as code editor.
 
 ## Technologies
 * **Python** 3.12.2
-    * **Paramiko** 3.3.1 (module to install, <a href="https://www.paramiko.org/">More Information</a>)
+    * **paramiko** 3.3.1 (module to install, <a href="https://www.paramiko.org/">More Information</a>)
     * **argparse, itertools, string** (modules from standard library) 
 
 ## Features
@@ -53,14 +53,33 @@ The following table shows which functions Hydralein supports:
     or  
     `python hydralein --help`  
 
-- Running a **Brute-Force Attack** to crack the SSH login passwort from user HomerJ at the server 123.4.5.6:  
+- To run a **Brute-Force Attack** with no further specifications use the following command in your terminal:  
+    `python hydralein.py -u [nameOfSshUser] -s [addressOfSshServer]`  
+    - Example: Crack the SSH login passwort from user HomerJ at the server with the IP-address 123.4.5.6:  
     `python hydralein.py -u HomerJ -s 123.4.5.6`  
     >i: Carried out with the default charset (digits and lowercase letters), this attack would require 42.5 days of computing time.  
     Then use --min and --max! Good idea. It still doesn't change as much as you think...  
 
-- Running a **Dictionary Attack** to crack the SSH login passwort from user HomerJ at the server 123.4.5.6:  
-    `python hydralein.py -u HomerJ -s 123.4.5.6 -w "path/to/wordlist"`
+- To run a **Dictionary Attack** you need this command:  
+    `python hydralein.py -u [nameOfSshUser] -s [addressOfSshServer] -w [pathToWordlist]`  
+    - Example: to crack the SSH login passwort from user HomerJ at the server 123.4.5.6:  
+    `python hydralein.py -u HomerJ -s 123.4.5.6 -w "path/to/wordlist"`  
+    - What you see, if the attack was succesful:  
+    ```
+    Starting a Dictionary Attack on server [serverName] ...
+    Password for user [userName] is: [password].
+    Password cracked successfully!
+    ```
 
 ## Additional Notes
+**Paramiko** is a third-party library used to establish SSH connections in Python.  
+  
+The **argparse** module is used to parse (read) command line arguments in Python programs. It allows to define arguments and options that can be passed to the program when starting it from the command line. These are then processed and are available in the program as variables.  
+  
+**Itertools** provides a collection of iterators for efficient loops in Python. It provides functions that enable common combinatorial operations such as infinitely iterating over elements.
+  
+The **string** module offers functions and constants that make working with character strings easier. It includes pre-built strings for letters, numbers, whitespace and other useful things, as well as string manipulation functions.  
+  
 **ChatGPT** was involved in the creation of the program (Debugging, Prompt Engineering etc.).  
+  
 I use **Google Translate** for translations from German into English.

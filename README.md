@@ -20,7 +20,7 @@ It was coded on **Windows 10** using **VSCode** as code editor.
     * **argparse, itertools, string** (modules from standard library) 
 
 ## Features
-The following table shows which functions Hydralein supports:  
+The following table shows which functions **Hydralein** supports:  
 
 | Flag | Description | Required |
 | ---- | ----------- | -------- |
@@ -28,8 +28,8 @@ The following table shows which functions Hydralein supports:
 | -u <br> --username | User of SSH connection | yes |
 | -s <br> --server | Address of target server (IP or DNS) | yes |
 | -w <br> --wordlist | Path to wordlist for dictionary attack | no |
-| --min | Minimum password length for Brute-Force Attack; default: 4 | no |
-| --max | Maximum password length for Brute-Force Attack; default: 6 | no |
+| --min | Minimum password length for Brute-Force Attack <br> default: 4 | no |
+| --max | Maximum password length for Brute-Force Attack <br> default: 6 | no |
 | -c <br> --charset | Charset to use for Brute-Force Attack<br>default: a1 (lowercase letters and digits)<br>Available option:<br>A: Uppercase letters (A-Z)<br>a: Lowercase letters (a-z)<br>1: Digits (0-9)<br>!: Special characters<br>Example that uses all options: -c Aa1! | no |
 
 - **Brute-Force-Attack**: The program systematically tries all possible combinations of characters to guess a password or access. It is a time-consuming “trial and error” method in which every possible password is tried until the right one is found.  
@@ -41,18 +41,20 @@ The following table shows which functions Hydralein supports:
 ## Getting Started
 0) <a href="https://docs.github.com/de/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">Fork</a> the project to your namespace, if you want to make changes or open a <a href="https://docs.github.com/de/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">Pull Request</a>.
 1) <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">Clone</a> the project to your platform if you just want to use the program.
+    - <ins>Example</ins>: Clone the repo e.g. using an SSH-Key:  
+    `git clone git@github.com:SarahZimmermann-Schmutzler/hydralein.git`
 2) Install the dependencies. In this case it's just **Paramiko**. You can install it across platforms with **Pip**:  
     `pip install paramiko`  
 
 >i: If you want to test the the program safely, you can create a test environment with Docker, that establishes an SSH connection to localhost. Make sure the container runs before testing the program. *How to create this environment is not part of this Repository*.
 
 ## Usage
-- Make sure you are in the folder where you cloned Hydralein into.  
+- Make sure you are in the folder where you cloned **Hydralein** into.  
 
 - Help! What options does the program support!?  
     `python hydralein.py -h`  
     or  
-    `python hydralein --help`  
+    `python hydralein.py --help`  
 
 - To run a **Brute-Force Attack** with no further specifications use the following command in your terminal:  
     `python hydralein.py -u [nameOfSshUser] -s [addressOfSshServer]`  

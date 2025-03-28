@@ -71,11 +71,6 @@ def ssh_connect(server: str, username: str, password: str) -> bool:
     
     Raises:
         paramiko.SSHException: If an SSH-related error occurs during the connection attempt.
-    
-    Example:
-        >>> ssh_connect('123.4.5.6', 'user', 'password123')
-        Password for user user is: password123.
-        True
     """
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -149,8 +144,6 @@ def brute_force_attack(server: str, username: str, min_len: int, max_len: int, c
 
 def main() -> None:
     """
-    Main function for HYDRALEIN:
-
     It parses command-line arguments and runs either a Dictionary Attack or a Brute-Force Attack 
     on an SSH server, based on the provided input.
 

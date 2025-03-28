@@ -28,7 +28,7 @@ The program was created as part of my training at the Developer Academy and is u
 1. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) the project to your platform if you just want to use it:
 
     ```bash
-    git clone git@github.com:SarahZimmermann-Schmutzler/XSStrike.git
+    git clone git@github.com:SarahZimmermann-Schmutzler/hydralein.git
     ```
 
 1. Install the **dependencies**:
@@ -96,7 +96,7 @@ The program was created as part of my training at the Developer Academy and is u
     ```
 
 > [!NOTE]
-> With the default charset (digits and lowercase letters), this attack would require 42.5 days of computing time. Using the --min and --max options would not shorten the processing time much
+> With the default charset (digits and lowercase letters), this attack would require 42.5 days of computing time. Using the --min and --max options would not shorten the processing time much.
 
 * To run a **Dictionary Attack** you need this command:  
 
